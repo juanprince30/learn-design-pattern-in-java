@@ -283,7 +283,7 @@ Design Pattern
 git clone https://github.com/juanprince30/learn-design-pattern-in-java
 ```
 
-2-DEplacer vous vers le design a tester
+2-Se seplacer vers le dossier design a tester
 
 ```bash
 cd Adapter
@@ -292,5 +292,5 @@ cd Adapter
 3-Executer le code java
 
 ```bash
-javac Hello.java
-java Hello
+javac main.java
+java main
