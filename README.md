@@ -1,9 +1,17 @@
 # 🎯 Design Patterns en Java : Singleton, Factory Method & Abstract Factory
 
 Ce projet a pour but de présenter les **design patterns de création** les plus utilisés en Java :  
+- **AbstractFactory**  
+- **Adapter**  
+- **Bridge**
+- **Builder**  
+- **Command**  
+- **Decorator**
+- **Factory**  
+- **Itrator**
+- **Observer**  
+- **Prototype**  
 - **Singleton**  
-- **Factory Method**  
-- **Abstract Factory**
 
 ---
 
@@ -11,29 +19,6 @@ Ce projet a pour but de présenter les **design patterns de création** les plus
 - Illustrer le fonctionnement de chaque pattern avec des exemples concrets.  
 - Montrer leurs différences et cas d’utilisation.  
 - Servir de base pédagogique pour apprendre et réviser les design patterns en Java.  
-
----
-
-## 🛠️ Patterns Implémentés
-
-### 1️⃣ Singleton
-Le pattern **Singleton** garantit qu’une classe ne possède **qu’une seule instance** et fournit un point d’accès global à celle-ci.  
-Exemple d’utilisation :  
-- Gestionnaire de connexion à une base de données 
-
----
-
-### 2️⃣ Factory Method
-Le pattern **Factory Method** permet de déléguer la création d’objets à des sous-classes.  
-Exemple d’utilisation :  
-- Système de livraison où chaque type de transport est créé via une factory (🚚 Camion, 🚢 Bateau, ✈️ Avion).  
-
----
-
-### 3️⃣ Abstract Factory
-Le pattern **Abstract Factory** permet de créer des familles d’objets liés **sans dépendre de leurs classes concrètes**.  
-Exemple d’utilisation :  
-- Création d’interfaces adapter a plusieur types de Chaise et de Sofa (Victorienne et Moderne)
 
 ---
 
@@ -72,6 +57,116 @@ Design Pattern
 │     ├─ VictorianChair.java
 │     ├─ VictorianFurnitureFactory.java
 │     └─ VictorianSofa.java
+├─ Adapter
+│  ├─ .idea
+│  │  ├─ misc.xml
+│  │  ├─ modules.xml
+│  │  └─ workspace.xml
+│  ├─ Adapter.iml
+│  ├─ out
+│  │  └─ production
+│  │     └─ Adapter
+│  │        ├─ FileCoverter.class
+│  │        ├─ FileFormatAdatper.class
+│  │        ├─ Main.class
+│  │        └─ PDFConverterLib.class
+│  └─ src
+│     ├─ FileCoverter.java
+│     ├─ FileFormatAdatper.java
+│     ├─ Main.java
+│     └─ PDFConverterLib.java
+├─ Bridge
+│  ├─ .idea
+│  │  ├─ misc.xml
+│  │  ├─ modules.xml
+│  │  └─ workspace.xml
+│  ├─ Bridge.iml
+│  ├─ out
+│  │  └─ production
+│  │     └─ Bridge
+│  │        ├─ EmailSender.class
+│  │        ├─ EmergencyNotification.class
+│  │        ├─ InfoNotification.class
+│  │        ├─ Main.class
+│  │        ├─ MessageSender.class
+│  │        ├─ Notification.class
+│  │        └─ SMSSender.class
+│  └─ src
+│     ├─ EmailSender.java
+│     ├─ EmergencyNotification.java
+│     ├─ InfoNotification.java
+│     ├─ Main.java
+│     ├─ MessageSender.java
+│     ├─ Notification.java
+│     └─ SMSSender.java
+├─ Builder
+│  ├─ .idea
+│  │  ├─ misc.xml
+│  │  ├─ modules.xml
+│  │  └─ workspace.xml
+│  ├─ Builder.iml
+│  ├─ out
+│  │  └─ production
+│  │     └─ Builder
+│  │        ├─ BuilderDirector.class
+│  │        ├─ Burger.class
+│  │        ├─ BurgerBuilder.class
+│  │        ├─ CheeseBurgerBuilder.class
+│  │        ├─ Main.class
+│  │        └─ VeganBurgerBuilder.class
+│  └─ src
+│     ├─ BuilderDirector.java
+│     ├─ Burger.java
+│     ├─ BurgerBuilder.java
+│     ├─ CheeseBurgerBuilder.java
+│     ├─ Main.java
+│     └─ VeganBurgerBuilder.java
+├─ Command
+│  ├─ .idea
+│  │  ├─ misc.xml
+│  │  ├─ modules.xml
+│  │  └─ workspace.xml
+│  ├─ Command.iml
+│  ├─ out
+│  │  └─ production
+│  │     └─ Command
+│  │        ├─ Command.class
+│  │        ├─ Light.class
+│  │        ├─ LightOffCommand.class
+│  │        ├─ LightOnCommande.class
+│  │        ├─ Main.class
+│  │        └─ RemoteControl.class
+│  └─ src
+│     ├─ Command.java
+│     ├─ Light.java
+│     ├─ LightOffCommand.java
+│     ├─ LightOnCommande.java
+│     ├─ Main.java
+│     └─ RemoteControl.java
+├─ Decorator
+│  ├─ .idea
+│  │  ├─ misc.xml
+│  │  ├─ modules.xml
+│  │  └─ workspace.xml
+│  ├─ Decorator.iml
+│  ├─ out
+│  │  └─ production
+│  │     └─ Decorator
+│  │        ├─ Decorator.class
+│  │        ├─ MailNotifier.class
+│  │        ├─ Main.class
+│  │        ├─ NotifierDecorator.class
+│  │        ├─ NotifierInterface.class
+│  │        ├─ SMSNotifier.class
+│  │        └─ WhatsappNotifier.class
+│  └─ src
+│     ├─ Decorator.java
+│     ├─ MailNotifier.java
+│     ├─ Main.java
+│     ├─ NotifierDecorator.java
+│     ├─ NotifierInterface.java
+│     ├─ SMSNotifier.java
+│     └─ WhatsappNotifier.java
 ├─ Factory
 │  ├─ .idea
 │  │  ├─ misc.xml
@@ -100,6 +195,68 @@ Design Pattern
 │     ├─ Sea.java
 │     ├─ Ship.java
 │     └─ Truck.java
+├─ Iterator
+│  ├─ .idea
+│  │  ├─ misc.xml
+│  │  ├─ modules.xml
+│  │  └─ workspace.xml
+│  ├─ Iterator.iml
+│  ├─ out
+│  │  └─ production
+│  │     └─ Iterator
+│  │        ├─ Book.class
+│  │        ├─ Collection.class
+│  │        ├─ Interator.class
+│  │        ├─ Library.class
+│  │        ├─ LibraryIterator.class
+│  │        └─ Main.class
+│  └─ src
+│     ├─ Book.java
+│     ├─ Collection.java
+│     ├─ Interator.java
+│     ├─ Library.java
+│     ├─ LibraryIterator.java
+│     └─ Main.java
+├─ Observer
+│  ├─ .idea
+│  │  ├─ misc.xml
+│  │  ├─ modules.xml
+│  │  └─ workspace.xml
+│  ├─ Observer.iml
+│  ├─ out
+│  │  └─ production
+│  │     └─ Observer
+│  │        ├─ Main.class
+│  │        ├─ Observer.class
+│  │        ├─ Subject.class
+│  │        ├─ WeatherApp.class
+│  │        ├─ WeatherSubject.class
+│  │        └─ WeatherWidget.class
+│  └─ src
+│     ├─ Main.java
+│     ├─ Observer.java
+│     ├─ Subject.java
+│     ├─ WeatherApp.java
+│     ├─ WeatherSubject.java
+│     └─ WeatherWidget.java
+├─ Prototype
+│  ├─ .idea
+│  │  ├─ misc.xml
+│  │  ├─ modules.xml
+│  │  └─ workspace.xml
+│  ├─ out
+│  │  └─ production
+│  │     └─ Prototype
+│  │        ├─ Cycle.class
+│  │        ├─ Main.class
+│  │        ├─ Prototype.class
+│  │        └─ Rectangle.class
+│  ├─ Prototype.iml
+│  └─ src
+│     ├─ Cycle.java
+│     ├─ Main.java
+│     ├─ Prototype.java
+│     └─ Rectangle.java
 ├─ README.md
 └─ Singleton
    ├─ .idea
@@ -117,3 +274,23 @@ Design Pattern
       └─ Main.java
 
 ```
+
+## Executer ou Compiler les codes
+
+1- CLoner le github
+
+```bash
+git clone https://github.com/juanprince30/learn-design-pattern-in-java
+```
+
+2-DEplacer vous vers le design a tester
+
+```bash
+cd Adapter
+```
+
+3-Executer le code java
+
+```bash
+javac Hello.java
+java Hello
